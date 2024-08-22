@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio Website</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="hero" id="home">
+        <nav>
+            <div class="logo">
+                <img src="s.jpg" alt="Logo" class="logo-img">
+            </div>
+        
+            <ul>
+                <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
+                <li><a href="#about" onclick="scrollToSection('about')">About</a></li>
+                <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+            <a href="#resume" class="btn" onclick="scrollToSection('resume')">Resume</a>
+        </nav>
+
+        <div class="content">
+            <span class="title">Software Engineer</span>
+            <h1 class="typing">Hello, I’m <span>Sharath</span></h1>
+            <p class="scroll-reveal">
+                I’m working on a professional, visually sophisticated and
+                technologically proficient, responsive and multi-functional React
+                Components.
+            </p>
+        </div>
+    </div>
+
+    <div class="hero scroll-reveal" id="about">
+        <nav>
+            <div class="logo">
+                <img src="s.jpg" alt="Logo" class="logo-img">
+            </div>
+            <ul>
+                <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
+                <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+            <a href="#resume" class="btn" onclick="scrollToSection('resume')">Resume</a>
+        </nav>
+
+        <div class="content">
+            <h1><span>About Me</span></h1>
+            <p>Hi, I'm Sharath, a passionate software engineer with a love for creating innovative solutions. With a background in web development, data science, and machine learning, I strive to build applications that are not only functional but also aesthetically pleasing.</p>
+            <p>Here are a few highlights of my journey:</p>
+            <ul>
+                <li>🌟 Developed a machine learning model that predicts customer churn with 90% accuracy.</li>
+                <li>💻 Created a responsive e-commerce website that increased sales by 30%.</li>
+                <li>📊 Designed interactive data visualizations for a financial analytics platform.</li>
+            </ul>
+            <p>In my free time, I enjoy exploring new technologies, contributing to open-source projects, and sharing my knowledge through blogs and tutorials.</p>
+        </div>
+    </div>
+
+    <div class="hero scroll-reveal" id="contact">
+        <nav>
+            <div class="logo">
+                <img src="s.jpg" alt="Logo" class="logo-img">
+            </div>
+            <ul>
+                <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
+                <li><a href="#about" onclick="scrollToSection('about')">About</a></li>
+            </ul>
+            <a href="#resume" class="btn" onclick="scrollToSection('resume')">Resume</a>
+        </nav>
+
+        <div class="content">
+            <h1><span>Contact</span></h1>
+            <p>If you'd like to get in touch, feel free to reach out through any of the following methods:</p>
+            <ul>
+                <li><img src="email.webp" alt="email" class="social-icon" /> Email: <a href="mailto:sharathjogi04@gmail.com">sharathjogi04@gmail.com</a></li>
+                <li>📱 Phone: +918137055683</li>
+                <li><img src="LinkedIn.png" alt="linkedin" class="social-icon" /> LinkedIn: <a href="https://www.linkedin.com/in/sharath-jogi-247a3a217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/sharath</a></li>
+                <li><img src="Instagram_icon.png.webp" alt="Instagram" class="social-icon" /> Instagram: <a href="https://www.instagram.com/sh_r_th___.916?utm_source=qr&igsh=eHFpemkwN2VmbXdu" target="_blank">@sharath</a></li>
+            </ul>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Let's connect!</p>
+        </div>
+    </div>  
+
+    <div id="resume" class="section scroll-reveal">
+        <h2 class="resume-title">My Resume</h2> <!-- Title for the Resume Section -->
+        <div class="resume-container">
+            <iframe src="_Resume (2).pdf" width="80%" height="500px"></iframe>
+        </div>
+        <div>
+            <button class="btn back-home-btn" onclick="scrollToSection('home')">Back to Home</button>
+        </div> <!-- Back to Home Button -->
+    </div>
+
+    <script src="script.js"></script>
+ 
+    
+</body>
+</html>
